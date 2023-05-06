@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="A melhor loja de produtos naturais">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Produtos Naturais</title>
+</head>
+<body>
+    <header class="cabeçalho">
+      <div class="div-cabeçalho">
+        <a href="">
+        <h1 class="cabeçalho-titulo">Produtos <br>Naturais</h1> 
+        </a> 
+        <a class="menu-item" href="">Pagina principal</a>
+        <a class="menu-item" href="segundapagina.html" >Mais produtos</a>
+        <a class="menu-item" href="" >Suplementos</a>
+        
+       <div class="pesquisar">
+        <input class="busca" type="text" id="text">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+    </div>
+
+    <div class="menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+    </header>
+
+    <div class="slideshow-container">
+
+      <!-- Imagens com largura total, com número de contagem e texto de legenda -->
+      <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="oleococo.jpg" style="width:50%" alt="...">
+          <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="creme4.jpg" style="width:50%"  alt="...">
+          <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="creme2.jpg" style="width:50%"  alt="...">
+          <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="produto2.jpg" style="width:50%" alt="...">
+        <div class="text"></div>
+    </div>
+
+      <!-- Botões de "Próximo" e "Anterior" -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- Circulos para navegação -->
+  <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+    <main class="conteudo">
+       <section class="conteudo-principal">
+        
+       
+          <div class="Cadastro-principal">
+              <h2> Cadastra-se em nossa loja <br>para receber informações de ofertas</h2>
+              <br>
+
+              <form  id="form">
+
+                <div class="form-control">
+                  <label for="nome">Nome:</label>
+                  <input class="cadastro-input" type="text" id="nome" placeholder="Digite seu nome" >
+                  <i><img class="img-success" src="./image/success-icon.svg" alt=""></i>
+                  <i><img class="img-error" src="\image\error-icon.svg" alt=""></i>
+                  <small> Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="email">Email:</label>
+                  <input class="cadastro-input" type="email" id="email" placeholder="Digite seu email">
+                  <i><img class="img-success" src="./image/success-icon.svg" alt=""></i>
+                  <i><img class="img-error" src="image/error-icon.svg" alt=""></i>
+                  <small> Error message</small>
+                </div>
+
+                <div class="form-control">
+                  <label for="telefone">Telefone:</label>
+                  <input class="cadastro-input" type="tel" id="telefone" placeholder="digite seu telefone">
+                  <i><img class="img-success" src="image/success-icon.svg" alt=""></i>
+                  <i><img class="img-error" src="image/error-icon.svg" alt=""></i>
+                  <small> Error message</small>
+                </div>
+                <br>
+                <button type="submit" class="butao-cadastrar">Cadastrar</button>
+              </form>
+         </div>
+      
+        
+      
+        
+       </section>
+
+       <div class="produtos">
+        <div class="div-produtos">
+          <h3>Produtos</h3>
+
+          <div class="alinhamento-fotos">
+            <a href=""><img class="fotoproduto" src="creme.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Creme de<br> Pele</h4> Por apenas <br> 39,90</div></a>
+            <a href=""><img class="fotoproduto" src="cafe.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Café da<br> Terra</h4> Por apenas <br> 25,90</div></a>
+            <a href=""><img class="fotoproduto" src="creme2.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Desodorante<br> Corporal</h4> por apenas <br> 19,90</div></a>
+            <a href=""><img class="fotoproduto" src="creme3.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Sabonete<br> Amendoa</h4> Por apenas <br> 23,90</div></a>
+            <a href=""><img class="fotoproduto" src="creme4.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Creme para<br> Rosto</h4> Por apenas <br> 55,90</div></a>
+            <a href=""><img class="fotoproduto" src="produto.jpg" width="94px" height="104px"><div class="ofertas1"> <h4> Oléo <br> Natural</h4> Por apenas <br> 39,90</div></a>
+           </div>
+       </div>
+
+    </main>
+
+    <footer>
+     <div class="rodape">
+      <a href="">
+        <h1 class="rodape-titulo">Produtos <br>Naturais</h1> 
+        </a> 
+        <a class="rodape-item" href="" >@ 2023</a>
+        <a class="rodape-item" href="" >Quem somos nós</a>
+        <a class="rodape-item" href="" >Contacte-nos</a>
+        <a class="rodape-item" href="" >Trabalhe Conosco</a>
+
+     </div>
+    </footer>
+
+    <script src="index.js">
+      
+  </script>
+</body>
+</html>

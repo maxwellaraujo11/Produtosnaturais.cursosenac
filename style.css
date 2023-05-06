@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border;
+   text-decoration: none;
+
+}
+
+body {
+    background: linear-gradient(270deg, rgba(15, 72, 9, 0.945) 20.29%, rgba(25, 125, 58, 0.781) 66.95%), #124809;
+    width: 100%;
+    height: 100%;
+    
+}
+/* --------------------------------- CABEÇALHO ---------------------------------------------------*/
+
+.div-cabeçalho {
+    background-color: #127e3d;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+.cabeçalho-titulo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: aliceblue;
+}
+
+
+.menu-item {
+    font-weight: 500;
+    color: aliceblue;
+    font-family: 'Iceberg', cursive;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    color:#000000
+}
+
+.busca {
+    background: #7A7474;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 10vw;
+    height: 30px;
+    font-weight: 600;
+}
+
+
+
+.busca::placeholder {
+    color: aliceblue;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Iceberg', cursive;
+}
+
+input{
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
+    font-weight: 400;
+    font-family: 'Iceberg', cursive;
+  }
+
+
+.btn-buscar {
+    width: 55px;
+    height: 28px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding: 3px;
+}
+
+.btn-buscar:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #25B30E;
+}
+
+/* --------------------------------------------- SLIDER CARROCEL --------------------------------------------------------*/
+
+/* Containder do Slideshow*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+.slideshow-container img {
+    margin-top: 10px;
+    padding:20px 25%;
+}
+  
+  /* Ocultar as imagens por padrão */
+  .mySlides {
+    display: none;
+    
+    
+  }
+  
+  /* Botões próximo e anterior */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+ 
+  
+  /* Posicionar o botão "Próximo" no lado direito */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Ao passar o mouse sobre as setas, adiciona uma cor de fundo preta com um pouco de transparência */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  
+
+  
+  /* Texto do número (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding-top: 10px;
+
+    
+    
+  }
+  
+  /* Os pontos / marcadores / indicadores */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------  COMEÇANDO O "CORPO" A PARTIR DAQUI ------------------------------------------- */ 
+
+.conteudo {
+    
+    padding-left: 10px;
+    padding-bottom: 20%;
+    
+    
+    
+    
+}
+
+.conteudo-principal {
+    
+    
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 35%;
+    height: 60%;
+    margin-left: 32%;
+    color:aliceblue;
+    font-family: 'Iceberg', cursive;
+    column-gap: 10px;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+
+.produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+}
+
+    
+
+
+
+
+.texto-oferta:hover {
+    transform: scale(1.0);
+    color: #000000;
+}
+
+
+
+.cadastro-principal {
+    flex-direction: column;
+    font-weight: 600;
+    color: aliceblue;
+    
+    
+    
+    
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    color: #efece9;
+    gap:0px 0px; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+.cadastro-input {
+    border-radius: 10px;
+    color: #000000;
+    border: 1px solid #3E445B;
+    width: 25vw;
+    height: 30px;
+    font-weight: 400;
+    gap: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.cadastro-input::placeholder {
+    color: rgb(7, 8, 9);
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.butao-cadastrar {
+    width: 10vw;
+    height: 25px;
+    font-weight: 700;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.butao-cadastrar:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: #25B30E;
+}
+
+/* ------------------------------ VALIDAÇÃO DO FORMULARIO------------------------------------------*/
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #d51a1a;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #decdcd;
+    visibility: visible;
+    margin-left: 68%;
+
+}
+
+.form-control i {
+    position: absolute;
+    visibility: hidden;
+    
+
+}
+
+.form-control small {
+    visibility: hidden;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+
+/* --------------------------------- 2° SECTION ---------------------------------------*/
+
+.div-produtos {
+    width: 600px;
+    height: 30px;
+    background:#127e3d;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    
+    
+    
+   
+}
+
+.div-produtos > h3 {
+    color: #FFFEFD;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+
+.alinhamento-fotos {
+    
+    margin-left: 0;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+
+.fotoproduto {
+    border-radius: 10px;
+    
+}
+
+.fotoproduto:hover {
+    transform: scale(1.1);
+}
+
+
+
+    
+
+
+.ofertas1 {
+    width:94px; 
+    height: 92px;
+    background-color:#127e3d;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Iceberg', cursive;
+    
+}
+
+/* --------------------------------------------------------------- FOOTER ---------------------------------------*/
+
+.rodape {
+    border-top: 0.4px solid #FFFEFD;
+    background-color: #127e3d;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}   
+
+.rodape-titulo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.rodape-item {
+    font-weight: 500;
+    color: aliceblue;
+    font-family: 'Iceberg', cursive;
+}
+.rodape-item:hover {
+    transform: scale(1.1);
+    color:#000a04
+}
+
+/* ---------------------------------------SEGUNDA PAGINA // CORPO // ---------------------------------*/
+
+
+
+.pagina-produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50pxpx;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    column-gap: 50px;
+    background-position: center;
+    
+    
+    
+    
+}
+
+.coluna-menu {
+    width: 150px;
+    height: 700px;
+    background-color:#127e3d;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    padding-left: 10px;
+    border-radius: 15px;
+    
+}
+
+
+
+.link-menu {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 30px;
+    color: #FFFEFD;
+    font-weight: 400;
+    font-family: 'Iceberg', cursive;
+    padding-bottom: 20px;
+
+}
+
+.link-menu:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+.foto-menu {
+    border-radius: 15px;
+}
+
+
+
+
+.caixa-1 {
+    margin-top: 80px;
+    width: 250px;
+    height: 200px;
+    background-color:  #127e3d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    padding-right: 50% 50%;
+    
+    
+
+
+
+}
+
+.caixa-1  a {
+    color: #FFFEFD;
+    padding-top: 5px;
+    
+}
+
+.caixa-1 a:hover {
+    transform: scale(1.1);
+    color: #000000;
+}
+
+.img {
+    border-radius: 15px;
+}
+
+
+@media (max-width: 785px) {
+
+    .div-cabeçalho{
+        padding: 18px 20px;
+    }
+}
